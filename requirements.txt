@@ -1,0 +1,13 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+# -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.7/index.html
+-f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.7/index.html
+
+datasets==1.6.2
+torch==1.7.1
+# +cu101
+torchvision==0.8.2
+# +cu101
+transformers==4.5.1
+# detectron2==0.3
+seqeval==1.2.2
+# CC=clang CXX=clang++ ARCHFLAGS="-arch x86_64" python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'

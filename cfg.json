@@ -1,0 +1,8 @@
+{
+    "model_name_or_path":"microsoft/layoutlmv2-base-uncased",
+    "output_dir":"/Volumes/ssd/unilm/layoutlmv2/test-ner",
+    "do_train":true,
+    "do_predict":true,
+    "max_steps":1000,
+    "warmup_ratio":0.1
+}
