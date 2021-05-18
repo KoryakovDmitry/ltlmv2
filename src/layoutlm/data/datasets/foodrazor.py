@@ -112,6 +112,9 @@ class FR(datasets.GeneratorBasedBuilder):
             datasets.SplitGenerator(
                 name=datasets.Split.TEST, gen_kwargs={"filepath": os.path.join("/Volumes/ssd/Initflow/ltlmv2", "dataset/testing_data/")}
             ),
+            datasets.SplitGenerator(
+                name=datasets.Split.TEST, gen_kwargs={"filepath": os.path.join("/Volumes/ssd/Initflow/ltlmv2", "dataset/val_data/")}
+            ),
         ]
 
     def _generate_examples(self, filepath):
