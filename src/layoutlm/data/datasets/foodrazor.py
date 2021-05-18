@@ -113,7 +113,7 @@ class FR(datasets.GeneratorBasedBuilder):
                 name=datasets.Split.TEST, gen_kwargs={"filepath": os.path.join("/Volumes/ssd/Initflow/ltlmv2", "dataset/testing_data/")}
             ),
             datasets.SplitGenerator(
-                name=datasets.Split.TEST, gen_kwargs={"filepath": os.path.join("/Volumes/ssd/Initflow/ltlmv2", "dataset/val_data/")}
+                name=datasets.Split.VALIDATION, gen_kwargs={"filepath": os.path.join("/Volumes/ssd/Initflow/ltlmv2", "dataset/val_data/")}
             ),
         ]
 
