@@ -134,7 +134,7 @@ class FR(datasets.GeneratorBasedBuilder):
             data = data[data.label.apply(lambda x: False if x in ("date_within", "company_within", "reference_id_within", "logo") else True)].reset_index(drop=True)
 
             for idx, row in data.iterrows():
-                x, y, w, h = cv2.boundingRect(row[:8].astype(int))
+                x, y, w, h = cv2.boundingRect(row[:8].to_numpy().reshape(-1, 2).astype(int))
                 bbox = [x, y, x+w, y+h]
                 bboxes.append(normalize_bbox(bbox, size))
 
